@@ -41,8 +41,8 @@ export function WeightList(props) {
                 <ReferenceField source="peopleId" reference="people">
                     <TextField source="name" />
                 </ReferenceField>
-                <NumberField source='weight' />
                 <DateField source='date'  showTime/>
+                <NumberField source='weight' />
 
             </Datagrid>
 

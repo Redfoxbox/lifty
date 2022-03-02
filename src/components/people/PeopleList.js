@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, Datagrid, TextField,NumberField, Filter, SearchInput, SelectField ,NumberInput} from 'react-admin'
+import { List, Datagrid, TextField,NumberField, Filter, SearchInput, SelectField} from 'react-admin'
 
 const PeopleFilter = (props) => (<Filter {...props}>
     <SearchInput placeholder='Name' source='name' resettable alwaysOn />
@@ -17,6 +17,7 @@ export function PeopleList(props) {
                         { id: true, name: 'Male', value: true }
                     ]
                 } />
+                <NumberField source='age' />
                 <NumberField source='height' />
             </Datagrid>
 

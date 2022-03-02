@@ -27,6 +27,7 @@ export const PeopleCreate = (props) => {
                 <TextInput disabled source="id" />
                 <TextInput source="name" />
                 <NumberInput source="height" />
+                <NumberInput source="age" />
                 <SelectInput source="sex" choices={
                     [
                         { id: false, name: 'Female', value: false },

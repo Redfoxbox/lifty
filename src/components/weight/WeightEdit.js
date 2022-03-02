@@ -1,21 +1,13 @@
 import React from "react";
-import { Edit, SimpleForm, TextInput, DateTimeInput, SelectInput, NumberInput } from 'react-admin';
+import { Edit, SimpleForm, TextInput, NumberInput, DateField } from 'react-admin';
 
 
 export const WeightEdit = (props) => (
     <Edit {...props}>
         <SimpleForm>
             <TextInput disabled source="id" />
-            <TextInput source="name" />
-            <NumberInput source="height" />
-            <SelectInput source="sex" choices={
-                [
-                    { id: false, name: 'Female', value: false },
-                    { id: true, name: 'Male', value: true }
-                ]
-            } />
-
-
+            <DateField source="date" showTime />
+            <NumberInput source="weight" />
         </SimpleForm>
     </Edit>
 );
